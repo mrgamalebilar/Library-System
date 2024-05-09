@@ -1,0 +1,82 @@
+/* confirmation_logout.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.profile-picture {
+    border-radius: 50%; /* Make the image circular */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    position: absolute; /* Position the image */
+    margin-top: 135px;
+    top: 162px; /* Distance from the top */
+    left: 635px; /* Distance from the left */
+    object-fit: cover; /* Ensure the image fills the container without stretching */
+    z-index: 1; /* Ensure the image is above the note box */
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h4 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.red-text {
+    color: red;
+}
+
+
+.buttons:hover {
+    background-color: #45a049;
+}
+
+.btn-back {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}

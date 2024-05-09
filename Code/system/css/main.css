@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.text {
+    text-align: center;
+    font-family: sans-serif;
+    color: #dfdfdf;
+}
+
+.button {
+    position: relative;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px; /* Increased padding for a bit more space */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+    border-radius: 5px;
+}
+
+.button:hover a {
+    background-color: #fff;
+    color: #000; /* Change text color on hover */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.button.active .dropdown {
+    display: block;
+}
+
+.button:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #fff;
+}
+
+.content {
+    margin-top: 80px; /* Adjust this based on your header height */
+    padding: 20px;
+}
+
+/* Animation for buttons */
+.button a {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button a:hover {
+    background-color: #dfdfdf;
+    transform: scale(1.05);
+}

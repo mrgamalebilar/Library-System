@@ -1,0 +1,6 @@
+Berns,Baho,Jordan,BSCS,4B
+Mary,Joy,Rubas,BSCS,4A
+Mark,Jhon,Baslot,BSCS,4B
+Lance,Villasan,Organiza,BSCS,4B
+Iverson,Liki,Parocha,BSCS,4A
+Alvin,Baho,Archiosa,CANR,1B

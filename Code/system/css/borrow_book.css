@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.profile-picture {
+    border-radius: 50%; /* Make the image circular */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    position: absolute; /* Position the image */
+    margin-top: 170px;
+    top: 10px; /* Distance from the top */
+    left: 505px; /* Distance from the left */
+    object-fit: cover; /* Ensure the image fills the container without stretching */
+    z-index: 1; /* Ensure the image is above the note box */
+}
+.borrow-form {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 130px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h5 {
+    text-align: center;
+    color: #333;
+    font-size: x-large;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    width: 98%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input[type="date"] {
+    width: 40%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-submit{
+    margin-left: 10%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00A600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover
+{
+    background-color: #009100;
+}
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

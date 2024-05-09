@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.profile-picture {
+    border-radius: 50%; /* Make the image circular */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    position: absolute; /* Position the image */
+    margin-top: 135px;
+    top: 25px; /* Distance from the top */
+    left: 625px; /* Distance from the left */
+    object-fit: cover; /* Ensure the image fills the container without stretching */
+    z-index: 1; /* Ensure the image is above the note box */
+}
+.input-label {
+    position: absolute;
+    top: 175px;
+    left: 680px; /* Adjust as needed */
+    font-size: 16px;
+    color: black;
+}
+
+
+.note-box {
+    background-color: #fff;
+    max-width: 700px; /* Adjust the maximum width */
+    margin: 240px auto 20px; /* Adjust margin top, auto for centering horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative; /* Ensure relative positioning for absolute positioning of the profile picture */
+    overflow: hidden; /* Prevent overflowing content */
+}
+
+.note-box textarea {
+    width: calc(100% - 22px); /* Adjust width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.note-box button[type="submit"],
+.note-box .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.note-box .btn.btn-back {
+    background-color: red;
+}
+
+.note {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.note .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    text-decoration: none;
+}
+
+.error-message {
+    color: red;
+}
+
+.note .delete-button:hover {
+    color: darkred;
+}

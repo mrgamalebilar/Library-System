@@ -1,0 +1,161 @@
+/* dashboard_style.css */
+
+/* Main container style */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.profile-picture {
+  border-radius: 50%; /* Make the image circular */
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  position: absolute; /* Position the image */
+  margin-top: 135px;
+  top: 80px; /* Distance from the top */
+  left: 60px; /* Distance from the left */
+  object-fit: cover; /* Ensure the image fills the container without stretching */
+  z-index: 1; /* Ensure the image is above the note box */
+}
+.student-picture {
+  border-radius: 50%; /* Make the image circular */
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  position: absolute; /* Position the image */
+  margin-top: 135px;
+  top: 80px; /* Distance from the top */
+  left: 365px; /* Distance from the left */
+  object-fit: cover; /* Ensure the image fills the container without stretching */
+  z-index: 1; /* Ensure the image is above the note box */
+}
+.attendance-picture {
+  border-radius: 50%; /* Make the image circular */
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  position: absolute; /* Position the image */
+  margin-top: 135px;
+  top: 80px; /* Distance from the top */
+  left: 635px; /* Distance from the left */
+  object-fit: cover; /* Ensure the image fills the container without stretching */
+  z-index: 1; /* Ensure the image is above the note box */
+}
+.book-picture {
+  border-radius: 50%; /* Make the image circular */
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  position: absolute; /* Position the image */
+  margin-top: 135px;
+  top: 80px; /* Distance from the top */
+  left: 935px; /* Distance from the left */
+  object-fit: cover; /* Ensure the image fills the container without stretching */
+  z-index: 1; /* Ensure the image is above the note box */
+}
+.borrowed-picture {
+  border-radius: 50%; /* Make the image circular */
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  position: absolute; /* Position the image */
+  margin-top: 135px;
+  top: 80px; /* Distance from the top */
+  left: 1175px; /* Distance from the left */
+  object-fit: cover; /* Ensure the image fills the container without stretching */
+  z-index: 1; /* Ensure the image is above the note box */
+}
+.returned-picture {
+  border-radius: 50%; /* Make the image circular */
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  position: absolute; /* Position the image */
+  margin-top: 135px;
+  top: 345px; /* Distance from the top */
+  left: 485px; /* Distance from the left */
+  object-fit: cover; /* Ensure the image fills the container without stretching */
+  z-index: 1; /* Ensure the image is above the note box */
+}
+.penalty-picture {
+  border-radius: 50%; /* Make the image circular */
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  position: absolute; /* Position the image */
+  margin-top: 135px;
+  top: 345px; /* Distance from the top */
+  left: 765px; /* Distance from the left */
+  object-fit: cover; /* Ensure the image fills the container without stretching */
+  z-index: 1; /* Ensure the image is above the note box */
+}
+/* Card container style */
+.big-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card style */
+.big-card {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Title style */
+.big-card h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Count style */
+.big-card .count {
+  font-size: 24px;
+  color: #007bff; /* Blue color for count */
+}
+
+/* View report button style */
+.big-card .view-report-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.big-card .view-report-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply animation to cards */
+.big-card {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Hover effect */
+.big-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,38 @@
+/* CSS styles for the "Leave a note" button */
+.leave-note-button {
+    text-align: center;
+    margin-top: 150px;
+}
+.leave-note-button .btn {
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.leave-note-button .btn:hover {
+    background-color: gray;
+}
+
+/* CSS styles for the image container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+}
+
+.image-container img {
+    max-width: 45%;
+    border: 5px solid #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}

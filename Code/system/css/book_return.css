@@ -1,0 +1,106 @@
+/* Apply basic styles to the container */
+.container {
+    margin: 20px;
+    margin-top: 130px;
+}
+.profile-picture {
+    border-radius: 50%; /* Make the image circular */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    position: absolute; /* Position the image */
+    margin-top: 125px;
+    top: 10px; /* Distance from the top */
+    left: 510px; /* Distance from the left */
+    object-fit: cover; /* Ensure the image fills the container without stretching */
+    z-index: 1; /* Ensure the image is above the note box */
+}
+/* Style for the alert */
+.alert {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:x-large;
+    font-weight: bold;
+}
+
+
+/* Style for the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Apply alternate background color to table rows */
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for table header */
+.table thead th {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add border bottom to table header */
+}
+
+/* Style for table data */
+.table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add border bottom to table data */
+}
+
+/* Apply hover effect to table rows */
+.table tbody tr:hover {
+    background-color: #e2e2e2;
+}
+.search-input {
+    width: 200px; /* Adjust width as needed */
+    padding: 8px; /* Adjust padding as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Adjust border styles as needed */
+    border-radius: 4px; /* Adjust border radius as needed */
+}
+
+/* Style for return button */
+.return-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Apply hover effect to return button */
+.return-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for delete button */
+.delete-btn {
+    background-color: #dc3545;
+}
+
+/* Apply hover effect to delete button */
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Apply animation to alert */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.alert {
+    animation: fadeIn 0.5s ease-in-out;
+}

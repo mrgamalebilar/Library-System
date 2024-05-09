@@ -1,0 +1,152 @@
+/* borrowed_report.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    padding: 8px 16px;
+    margin-right: 700px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delete-all-btn,
+.print-btn,
+.calculate-all-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.delete-all-btn {
+    background-color: #de1e1d;
+    color: #fff;
+}
+
+.print-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.calculate-all-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.delete-all-btn:hover {
+    background-color: #a51616;
+}
+
+.print-btn:hover {
+    background-color: #0056b3;
+}
+
+.calculate-all-btn:hover {
+    background-color: #218838;
+}
+
+.returned-books-table {
+    width: 98%;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+.hide-for-print {
+    display: none !important;
+}
+
+
+.returned-books-table th,
+.returned-books-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.returned-books-table th {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.returned-books-table td:last-child {
+    text-align: center;
+}
+
+.delete-btn {
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #a51616;
+}
+
+        .date-filter-form,
+        .refresh-form {
+            margin-bottom: 20px;
+        }
+
+        .date-filter-form label,
+        .refresh-form button {
+            margin-right: 10px;
+        }
+
+        .date-filter-form input[type="date"],
+        .date-filter-form button,
+        .refresh-form button {
+            padding: 8px 16px;
+            border: 1px solid #000;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .date-filter-form input[type="date"] {
+            width: 200px;
+        }
+
+        .date-filter-form button:hover,
+        .refresh-form button:hover {
+            background-color: #f0f0f0;
+        }
+        .date-filter-form button.filter-btn {
+            color: red; /* Show text color set to red */
+        }
+        .refresh-form button.refresh-btn {
+            color: blue; /* Refresh text color set to blue */
+        }
